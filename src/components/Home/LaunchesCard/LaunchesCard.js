@@ -3,9 +3,10 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { setLaunches } from "../../../redux/actions/launchActions";
+import SingleLaunchCard from "../SingleLaunchCard/SingleLaunchCard";
 
 const LaunchesCard = () => {
-  const launches = useSelector((state) => state);
+  const launches = useSelector((state) => state.allLaunches.launches);
   const dispatch = useDispatch();
 
   const fetchLaunches = async () => {
@@ -14,7 +15,6 @@ const LaunchesCard = () => {
       .catch((error) => {
         console.log({ error });
       });
-    // console.log(response.data)
     dispatch(setLaunches(response.data));
   };
 
@@ -22,28 +22,13 @@ const LaunchesCard = () => {
     fetchLaunches();
   }, []);
 
-  console.log("launches", launches.allLaunches.launches[0].details);
+  console.log("launches", launches);
 
   return (
     <div>
-      <p>data: {launches.allLaunches.launches.length}</p>
+      <p>Total Launched : {launches.length}</p>
 
-      {/* cards */}
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <SingleLaunchCard />
     </div>
   );
 };
