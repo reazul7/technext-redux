@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+<h2 align="center">
+  TechNext - Job Task<br/>
+  <a href="" target="_blank">Live Site</a>
+</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hi there 👋,
 
-## Available Scripts
+## I am Reazul Islam Bhuiyan. A Front-End Developer & A quick learner.
 
-In the project directory, you can run:
+## [See My Resume](https://drive.google.com/file/d/1LJmqJk2MoqLS6yNC_oBBN5_156Xa2h0t/view?usp=sharing) || [Download Resume](https://drive.google.com/uc?export=download&id=1LJmqJk2MoqLS6yNC_oBBN5_156Xa2h0t)
 
-### `yarn start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project was built using these technologies.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React.js
+- JavaScript
+- Redux
+- HTML5
+- Bootstrap5
+- React Router DOM
+- Netlify
+- VsCode
 
-### `yarn test`
+## Contact With me
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' title="Github" height='40'>](https://github.com/reazul7) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' title="linkedin" alt='linkedin' height='40'>](https://www.linkedin.com/in/reazul7/) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/facebook.svg' alt='facebook' title="facebook" height='40'>](https://www.facebook.com/reazul.islam.1426876/)
 
-### `yarn build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**📖 Multi-Page Layout**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**📱 Fully Responsive**
 
-### `yarn eject`
+## 🛠 Installation and Setup Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Open your terminal and clone the repository
+   ```sh
+   git clone https://github.com/reazul7/technext-redux.git
+   ```
+2. Change the working directory
+   ```sh
+   cd technext-redux
+   ```
+3. Install dependencies if your package manager in npm
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+   or if your package manager in yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```sh
+   yarn
+   ```
 
-## Learn More
+4. Run the app if your package manager in npm
+   ```sh
+   npm start
+   ```
+   or if your package manager in yarn
+   ```sh
+   yarn start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🌟 You are all set!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=reazul7&show_icons=true)
