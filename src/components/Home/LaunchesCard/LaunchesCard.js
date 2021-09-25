@@ -25,54 +25,38 @@ const LaunchesCard = () => {
   return (
     <div className="container">
       <div className="row">
+        {/* search box */}
         <div className="col-md-12 py-2">
-          <p>Total Launched : {launches.length}</p>
+          <input className="px-2 rounded" type="text" onChange={(e) => setSearch(e.target.value)} placeholder="Search Rocket Name" />
         </div>
-        <div className="col-md-12 py-2">
-          <input type="text" onChange={(e) => setSearch(e.target.value)} />
-        </div>
-        <div className="col-md-12 py-2">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="row">
-                {launches
 
-                  .filter((value) => {
-                    return value.rocket.rocket_name
-                      .toLowerCase()
-                      .includes(search.toLowerCase());
-                  })
-                  .map((info) => (
-                    <div className="col-md-4 py-2">
-                      <div class="card mb-3" style={{ maxWidth: "540px" }}>
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img
-                              src={info.links.mission_patch}
-                              class="img-fluid rounded-start"
-                              alt="..."
-                            />
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">{info.mission_name}</h5>
-                              <p class="card-text">{info.details}</p>
-                              <p class="card-text">
-                                <small class="text-muted">
-                                  Rocket Name: {info.rocket.rocket_name}
-                                </small>
-                              </p>
-                              <p class="card-text">
-                                <small class="text-muted">Mission: {}</small>
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+        <div className="col-md-12">
+          <div className="row">
+            {launches
+
+              .filter((value) => {
+                return value.rocket.rocket_name
+                  .toLowerCase()
+                  .includes(search.toLowerCase());
+              })
+              .map((info) => (
+                <div className="row col-md-6 col-lg-3 g-4">
+                  <div className="col">
+                    <div className="card h-100">
+                      <div className="d-flex justify-content-center pt-2">
+                        <img style={{ height: 'auto', width: '80%' }} src={info.links.mission_patch} className="card-img-top" alt={info.rocket.rocket_name} />
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center">{info.mission_name}</h5>
+                        <p class="card-text">{info.details}</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Launched Year: {info.launch_year}</small>
                       </div>
                     </div>
-                  ))}
-              </div>
-            </div>
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>
