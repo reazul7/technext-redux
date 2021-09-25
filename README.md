@@ -28,9 +28,9 @@ This project was built using these technologies.
 
 ## Features
 
-**📖 Multi-Page Layout**
+**📖 Single-Page Layout**
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+**🎨 Styled with Bootstrap5**
 
 **📱 Fully Responsive**
 
@@ -65,6 +65,6 @@ This project was built using these technologies.
    yarn start
    ```
 
-### 🌟 You are all set!
+### 🌟 You are done!
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=reazul7&show_icons=true)
