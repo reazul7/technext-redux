@@ -7,7 +7,6 @@ const LaunchesCard = () => {
   const launches = useSelector((state) => state.allLaunches.launches);
   const dispatch = useDispatch();
   const [search, setSearch] = useState("");
-  console.log("search", search);
 
   useEffect(() => {
     const fetchLaunches = async () => {
@@ -39,7 +38,6 @@ const LaunchesCard = () => {
                 {launches
 
                   .filter((value) => {
-                    // console.log(infos)
                     return value.rocket.rocket_name
                       .toLowerCase()
                       .includes(search.toLowerCase());
